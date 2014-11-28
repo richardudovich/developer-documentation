@@ -71,7 +71,7 @@ Then we'll implement the `createRealtimeReportDimensionSetting()` method:
         return $setting;
     }
 
-Notice how `$settings->availableValues` is set from `MyPlugin::$availableDimensionsForAggregation`. The **availableValues** property should be set to an array mapping column values with their appropriate display text. This array will probably come in handy later so we'll put it in a static class attribute.
+Notice how `$setting->availableValues` is set from `MyPlugin::$availableDimensionsForAggregation`. The **availableValues** property should be set to an array mapping column values with their appropriate display text. This array will probably come in handy later so we'll put it in a static class attribute.
 
 In your plugin class add the following code:
 
